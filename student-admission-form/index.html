@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <title>Student Admission form</title>
 </head>
 <body>
-    
+    <h1>Student Admission form</h1>
+    <form>
+        <div class="group">
+            <input type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="group">
+            <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="group">
+            <input type="number" name="year-of-birth" id="year-of-birth" placeholder="Year of Birth" min="2006" max="2018" />
+        </div>
+        <div class="group">
+            <textarea name="about-you" id="about-you" placeholder="Tell us about yourself?" value=""></textarea>
+        </div>
+        <div class="group">
+            <textarea name="achievements" id="achievements" placeholder="Achievements? If yes, please describe them." value=""></textarea>
+        </div>
+        <div class="group">
+            <select name="grade" id="grade">
+                <option value selected>Select a grade</option>
+            </select>
+        </div>
+        <div class="group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
